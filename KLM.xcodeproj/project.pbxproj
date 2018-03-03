@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80BF6E5848FDCD2BB61AF28D /* Pods_KLMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C340B168B824EA76E0119B3 /* Pods_KLMTests.framework */; };
+		B323C87E9CB085E5CCC78FAD /* Pods_KLM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F848FD11A71D34A1F0E7BE29 /* Pods_KLM.framework */; };
+		F11FA1781FBADD2D00071790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FA1771FBADD2D00071790 /* AppDelegate.swift */; };
+		F11FA17A1FBADD2D00071790 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FA1791FBADD2D00071790 /* MainViewController.swift */; };
+		F11FA17D1FBADD2D00071790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11FA17B1FBADD2D00071790 /* Main.storyboard */; };
+		F11FA17F1FBADD2D00071790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11FA17E1FBADD2D00071790 /* Assets.xcassets */; };
+		F11FA1821FBADD2D00071790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11FA1801FBADD2D00071790 /* LaunchScreen.storyboard */; };
+		F15139FE1FBAF4A6004A1616 /* DetailHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15139FD1FBAF4A6004A1616 /* DetailHouseViewController.swift */; };
+		F1513A001FBAFC87004A1616 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15139FF1FBAFC87004A1616 /* ContainerView.swift */; };
+		F1513A101FBB0632004A1616 /* CommentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1513A0F1FBB0632004A1616 /* CommentViewModelTest.swift */; };
+		F1513A121FBB1332004A1616 /* ApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1513A111FBB1332004A1616 /* ApiTest.swift */; };
+		F1C8CB761FBADE20005F336A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8CB751FBADE20005F336A /* Comment.swift */; };
+		F1C8CB791FBADF35005F336A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8CB781FBADF35005F336A /* APIClient.swift */; };
+		F1C8CB7C1FBADFA3005F336A /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8CB7B1FBADFA3005F336A /* CommentViewModel.swift */; };
+		F1C8CB7F1FBAE3D2005F336A /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C8CB7E1FBAE3D2005F336A /* CommentTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1513A0A1FBB056E004A1616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F11FA16C1FBADD2D00071790 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11FA1731FBADD2D00071790;
+			remoteInfo = KLM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18686AC2C946189E4DA00D99 /* Pods-KLMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLMTests/Pods-KLMTests.release.xcconfig"; sourceTree = "<group>"; };
+		22A8E2E9D15CEDB60E3244B5 /* Pods-KLM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLM/Pods-KLM.debug.xcconfig"; sourceTree = "<group>"; };
+		7C340B168B824EA76E0119B3 /* Pods_KLMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB85E4C82538F0D01912506A /* Pods-KLMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLMTests/Pods-KLMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4CF5B3D11E5903ECB12B6C /* Pods-KLM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLM.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLM/Pods-KLM.release.xcconfig"; sourceTree = "<group>"; };
+		F11FA1741FBADD2D00071790 /* KLM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11FA1771FBADD2D00071790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F11FA1791FBADD2D00071790 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F11FA17C1FBADD2D00071790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F11FA17E1FBADD2D00071790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F11FA1811FBADD2D00071790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F11FA1831FBADD2D00071790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15139FD1FBAF4A6004A1616 /* DetailHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHouseViewController.swift; sourceTree = "<group>"; };
+		F15139FF1FBAFC87004A1616 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		F1513A051FBB056E004A1616 /* KLMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1513A091FBB056E004A1616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1513A0F1FBB0632004A1616 /* CommentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModelTest.swift; sourceTree = "<group>"; };
+		F1513A111FBB1332004A1616 /* ApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTest.swift; sourceTree = "<group>"; };
+		F1C8CB751FBADE20005F336A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F1C8CB781FBADF35005F336A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F1C8CB7B1FBADFA3005F336A /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		F1C8CB7E1FBAE3D2005F336A /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		F848FD11A71D34A1F0E7BE29 /* Pods_KLM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F11FA1711FBADD2D00071790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B323C87E9CB085E5CCC78FAD /* Pods_KLM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1513A021FBB056E004A1616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BF6E5848FDCD2BB61AF28D /* Pods_KLMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		966EA03D13352A4F503A38BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22A8E2E9D15CEDB60E3244B5 /* Pods-KLM.debug.xcconfig */,
+				CB4CF5B3D11E5903ECB12B6C /* Pods-KLM.release.xcconfig */,
+				BB85E4C82538F0D01912506A /* Pods-KLMTests.debug.xcconfig */,
+				18686AC2C946189E4DA00D99 /* Pods-KLMTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B09C597A99EFD0FC091E2226 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F848FD11A71D34A1F0E7BE29 /* Pods_KLM.framework */,
+				7C340B168B824EA76E0119B3 /* Pods_KLMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F11FA16B1FBADD2D00071790 = {
+			isa = PBXGroup;
+			children = (
+				F11FA1761FBADD2D00071790 /* KLM */,
+				F1513A061FBB056E004A1616 /* KLMTests */,
+				F11FA1751FBADD2D00071790 /* Products */,
+				966EA03D13352A4F503A38BD /* Pods */,
+				B09C597A99EFD0FC091E2226 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F11FA1751FBADD2D00071790 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F11FA1741FBADD2D00071790 /* KLM.app */,
+				F1513A051FBB056E004A1616 /* KLMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F11FA1761FBADD2D00071790 /* KLM */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8CB7D1FBAE3B8005F336A /* View-Controller */,
+				F1C8CB7A1FBADF8C005F336A /* ViewModel */,
+				F1C8CB771FBADE54005F336A /* Services */,
+				F1C8CB741FBADE0E005F336A /* Model */,
+				F11FA1771FBADD2D00071790 /* AppDelegate.swift */,
+				F11FA17E1FBADD2D00071790 /* Assets.xcassets */,
+				F11FA1831FBADD2D00071790 /* Info.plist */,
+			);
+			path = KLM;
+			sourceTree = "<group>";
+		};
+		F15139FC1FBAF3D3004A1616 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F11FA1801FBADD2D00071790 /* LaunchScreen.storyboard */,
+				F11FA17B1FBADD2D00071790 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F1513A061FBB056E004A1616 /* KLMTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1513A091FBB056E004A1616 /* Info.plist */,
+				F1513A0F1FBB0632004A1616 /* CommentViewModelTest.swift */,
+				F1513A111FBB1332004A1616 /* ApiTest.swift */,
+			);
+			path = KLMTests;
+			sourceTree = "<group>";
+		};
+		F1C8CB741FBADE0E005F336A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8CB751FBADE20005F336A /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1C8CB771FBADE54005F336A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8CB781FBADF35005F336A /* APIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F1C8CB7A1FBADF8C005F336A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1C8CB7B1FBADFA3005F336A /* CommentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1C8CB7D1FBAE3B8005F336A /* View-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F11FA1791FBADD2D00071790 /* MainViewController.swift */,
+				F15139FD1FBAF4A6004A1616 /* DetailHouseViewController.swift */,
+				F1C8CB7E1FBAE3D2005F336A /* CommentTableViewCell.swift */,
+				F15139FC1FBAF3D3004A1616 /* Storyboards */,
+				F15139FF1FBAFC87004A1616 /* ContainerView.swift */,
+			);
+			path = "View-Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F11FA1731FBADD2D00071790 /* KLM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11FA1861FBADD2D00071790 /* Build configuration list for PBXNativeTarget "KLM" */;
+			buildPhases = (
+				915D396246F3CEE1B363D0B0 /* [CP] Check Pods Manifest.lock */,
+				F11FA1701FBADD2D00071790 /* Sources */,
+				F11FA1711FBADD2D00071790 /* Frameworks */,
+				F11FA1721FBADD2D00071790 /* Resources */,
+				489FA27897DCDD010575CBA1 /* [CP] Embed Pods Frameworks */,
+				46C473E9E9D925FC2C9B1A5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KLM;
+			productName = KLM;
+			productReference = F11FA1741FBADD2D00071790 /* KLM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1513A041FBB056E004A1616 /* KLMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1513A0E1FBB056E004A1616 /* Build configuration list for PBXNativeTarget "KLMTests" */;
+			buildPhases = (
+				2BCD9C8FCF8616AE05DE81C9 /* [CP] Check Pods Manifest.lock */,
+				F1513A011FBB056E004A1616 /* Sources */,
+				F1513A021FBB056E004A1616 /* Frameworks */,
+				F1513A031FBB056E004A1616 /* Resources */,
+				26F401D3F352C3624B1687DD /* [CP] Embed Pods Frameworks */,
+				87FE4A66DF381B8182F1B9A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1513A0B1FBB056E004A1616 /* PBXTargetDependency */,
+			);
+			name = KLMTests;
+			productName = KLMTests;
+			productReference = F1513A051FBB056E004A1616 /* KLMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F11FA16C1FBADD2D00071790 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Diego Caridei";
+				TargetAttributes = {
+					F11FA1731FBADD2D00071790 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F1513A041FBB056E004A1616 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F11FA1731FBADD2D00071790;
+					};
+				};
+			};
+			buildConfigurationList = F11FA16F1FBADD2D00071790 /* Build configuration list for PBXProject "KLM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F11FA16B1FBADD2D00071790;
+			productRefGroup = F11FA1751FBADD2D00071790 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F11FA1731FBADD2D00071790 /* KLM */,
+				F1513A041FBB056E004A1616 /* KLMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F11FA1721FBADD2D00071790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11FA1821FBADD2D00071790 /* LaunchScreen.storyboard in Resources */,
+				F11FA17F1FBADD2D00071790 /* Assets.xcassets in Resources */,
+				F11FA17D1FBADD2D00071790 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1513A031FBB056E004A1616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26F401D3F352C3624B1687DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KLMTests/Pods-KLMTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLMTests/Pods-KLMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BCD9C8FCF8616AE05DE81C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46C473E9E9D925FC2C9B1A5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLM/Pods-KLM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		489FA27897DCDD010575CBA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KLM/Pods-KLM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLM/Pods-KLM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87FE4A66DF381B8182F1B9A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLMTests/Pods-KLMTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		915D396246F3CEE1B363D0B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F11FA1701FBADD2D00071790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15139FE1FBAF4A6004A1616 /* DetailHouseViewController.swift in Sources */,
+				F11FA17A1FBADD2D00071790 /* MainViewController.swift in Sources */,
+				F1C8CB7F1FBAE3D2005F336A /* CommentTableViewCell.swift in Sources */,
+				F1C8CB761FBADE20005F336A /* Comment.swift in Sources */,
+				F1513A001FBAFC87004A1616 /* ContainerView.swift in Sources */,
+				F11FA1781FBADD2D00071790 /* AppDelegate.swift in Sources */,
+				F1C8CB7C1FBADFA3005F336A /* CommentViewModel.swift in Sources */,
+				F1C8CB791FBADF35005F336A /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1513A011FBB056E004A1616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1513A121FBB1332004A1616 /* ApiTest.swift in Sources */,
+				F1513A101FBB0632004A1616 /* CommentViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1513A0B1FBB056E004A1616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11FA1731FBADD2D00071790 /* KLM */;
+			targetProxy = F1513A0A1FBB056E004A1616 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F11FA17B1FBADD2D00071790 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11FA17C1FBADD2D00071790 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F11FA1801FBADD2D00071790 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11FA1811FBADD2D00071790 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F11FA1841FBADD2D00071790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F11FA1851FBADD2D00071790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F11FA1871FBADD2D00071790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A8E2E9D15CEDB60E3244B5 /* Pods-KLM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY4GNF2SA4;
+				INFOPLIST_FILE = KLM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegocaridei.KLM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F11FA1881FBADD2D00071790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4CF5B3D11E5903ECB12B6C /* Pods-KLM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY4GNF2SA4;
+				INFOPLIST_FILE = KLM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegocaridei.KLM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1513A0C1FBB056E004A1616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB85E4C82538F0D01912506A /* Pods-KLMTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY4GNF2SA4;
+				INFOPLIST_FILE = KLMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegocaridei.KLMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLM.app/KLM";
+			};
+			name = Debug;
+		};
+		F1513A0D1FBB056E004A1616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18686AC2C946189E4DA00D99 /* Pods-KLMTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JY4GNF2SA4;
+				INFOPLIST_FILE = KLMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegocaridei.KLMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLM.app/KLM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F11FA16F1FBADD2D00071790 /* Build configuration list for PBXProject "KLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11FA1841FBADD2D00071790 /* Debug */,
+				F11FA1851FBADD2D00071790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11FA1861FBADD2D00071790 /* Build configuration list for PBXNativeTarget "KLM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11FA1871FBADD2D00071790 /* Debug */,
+				F11FA1881FBADD2D00071790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1513A0E1FBB056E004A1616 /* Build configuration list for PBXNativeTarget "KLMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1513A0C1FBB056E004A1616 /* Debug */,
+				F1513A0D1FBB056E004A1616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F11FA16C1FBADD2D00071790 /* Project object */;
+}
